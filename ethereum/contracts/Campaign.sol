@@ -34,8 +34,8 @@ contract Campaign {
     _;
   }
 
-  function Campaign(uint _minimumContribution, address campaignCreator) public {
-    owner = campaignCreator;
+  function Campaign(uint _minimumContribution, address _campaignCreator) public {
+    owner = _campaignCreator;
     minimumContribution = _minimumContribution;
   }
 
