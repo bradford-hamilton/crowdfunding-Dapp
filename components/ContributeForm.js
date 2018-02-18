@@ -50,7 +50,13 @@ class ContributeForm extends Component {
             onChange={e => this.setState({ value: e.target.value })}
           />
           <Message error header="Oops!" content={this.state.errorMessage} />
-          <Button primary loading={this.state.loading}>Contribute!</Button>
+          <Button
+            primary
+            style={{ marginTop: '10px' }}
+            loading={this.state.loading}
+          >
+            Contribute!
+          </Button>
         </Form.Field>
       </Form>
     );
